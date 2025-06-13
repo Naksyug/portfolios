@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0f3b2e, #145a44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    width: 95%;
+    max-width: 1500px;
+    height: 95vh;
+    background-color: rgba(15, 59, 46, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+/* Header */
+#head {
+    font-family: 'Charmonman', cursive;
+    background: linear-gradient(135deg, #081f19, #2d7259);
+    color: rgb(207, 219, 139);
+    padding: 20px;
+    font-size: 28px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid rgb(207, 219, 139);
+    box-shadow: 0 0 10px #1abc9c;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Left and Right Panels */
+.col1, .col2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Menu Section */
+.menu {
+    background-color: #1e4d3a;
+    padding: 15px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    max-height: 40%;
+    overflow-y: auto;
+}
+
+.menuButtons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Products Section */
+.products {
+    background-color: #1f5841;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+#selectedItems {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 50px;
+}
+
+/* Table */
+#selectedItems table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+#selectedItems th, #selectedItems td {
+    border: 1px solid #2e7d5b;
+    padding: 10px;
+    text-align: center;
+}
+
+#selectedItems th {
+    background-color: #27ae60;
+    font-weight: bold;
+}
+
+#selectedItems tr:nth-child(even) {
+    background-color: #145a44;
+}
+
+tfoot td {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #2e7d5b;
+    padding: 10px;
+}
+
+/* Clear Button Positioned Bottom Right */
+#clearSelectedBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+#clearSelectedBtn:hover {
+    background-color: #c0392b;
+}
+
+/* Calculator Section */
+.calculator {
+    background-color: #145a44;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0f3b2e;
+    color: white;
+    box-shadow: inset 0 0 5px #27ae60;
+}
+
+/* Calculator Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* General Button Styles */
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #1e8449;
+}
+
+#backBtn {
+     position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #2e7d5b;
+    color: rgb(207, 219, 139);
+    border: 2px solid rgb(207, 219, 139);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Charmonman', cursive;
+    cursor: pointer;
+    box-shadow: 0 0 10px #1abc9c;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#backBtn:hover {
+    background-color: #1e4d3a;
+    transform: scale(1.05);
+}

@@ -1,0 +1,175 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #003322, #004d33);
+  margin: 20px;
+  color: #dfffe0;
+}
+
+h1, h2, h3, h4 {
+  color: #cfffbc;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px #0a0;
+}
+
+/* Buttons */
+button, .button-link {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00cc66;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 255, 128, 0.4);
+}
+
+button:hover, .button-link:hover {
+  background-color: #00b359;
+  transform: scale(1.03);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #002e1f;
+  margin-top: 15px;
+  box-shadow: 0 3px 8px rgba(0, 128, 64, 0.3);
+  color: #d9ffe3;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #007a4d;
+  text-align: left;
+}
+
+th {
+  background-color: #006644;
+  color: #e0ffe5;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background-color: #003d29;
+}
+
+/* Form inputs */
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #002d1e;
+  border: 1px solid #00cc66;
+  border-radius: 6px;
+  color: #dfffe0;
+  font-size: 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #66ffcc;
+  outline: none;
+  background-color: #003d29;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #cc0000;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.delete-button:hover {
+  background-color: #990000;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  table, form {
+    width: 100%;
+  }
+
+  button, .button-link {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Back Button Style */
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: #004d33;
+  color: #dfffe0;
+  border: 2px solid #00cc66;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 255, 128, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.back-button:hover {
+  background-color: #006644;
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.left-column {
+  width: 25%;
+  background-color: #002b1c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 128, 64, 0.2);
+}
+
+.right-column {
+  width: 75%;
+  padding: 20px;
+  background-color: #002f1e;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 128, 64, 0.2);
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+/* Optional: make form look more structured */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.left-column table {
+  width: 100%;
+  font-size: 13px;
+  background-color: #003922;
+}
+
+.left-column th, .left-column td {
+  padding: 6px 8px;
+}

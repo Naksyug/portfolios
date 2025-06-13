@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js"></script>
+</head>
+<body>
+<div class="container">
+    <!-- Ste navigation? -->
+    <div id="head">
+        <h1 class="shining">POINT OF SALE SYSTEM</h1>
+        <p id="description">process orders quickly and efficiently</p>
+    </div>
+
+    <!-- Layout wrapper: Left = menu & products, Right = calculator -->
+    <div class="layout">
+        <!-- Left column -->
+        <div class="col1">
+            <!-- Dito ilagay yung mga menu sa admin -->
+            <div class="menu">
+                <h2>Menu Items</h2>
+                <p>Please select a product listed below</p>
+                <div class="menuButtons">
+                    <!-- menu buttons base on the what the admin puts -->
+                </div>
+            </div>
+
+            <!-- Dito lalabs yung mga pinindot na product, pang produce lang ng reciept -->
+            <div class="products">
+                <h2>Selected Products</h2>
+                <div id="selectedItems">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Qty</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="selectedItemsBody">
+
+                            <!-- Items lalabas here -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" style="text-align: left;">
+                                    Total: <span id="totalPrice">₱0.00</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;">
+    <button id="clearSelectedBtn">Clear Selected Items</button>
+    <button id="proceedOrderBtn">Proceed Order</button>
+    <a href="index.php">
+        <button type="button">Back to Index</button>
+    </a>
+</div>
+            </div>
+        </div>
+
+        <!-- Right column -->
+        <!-- Calculator Section -->
+        <div class="col2">
+            <div class="calculator">
+                <h2>Calculator</h2>
+                <p>Use this for quick price calculations</p>
+                <input type="text" id="display" disabled>
+                <div class="buttons">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>+</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>-</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>*</button>
+                    <button>0</button>
+                    <button id="C">C</button>
+                    <button>=</button>
+                    <button>/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
