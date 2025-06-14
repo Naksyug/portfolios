@@ -182,6 +182,7 @@ a {
 }
 
 #container5 h3 {
+  padding-right: 200px;
   font-size: 4rem;
   margin-bottom: 2.5rem;
   color: rgb(255, 255, 255);
@@ -271,18 +272,122 @@ a {
   color: rgb(202, 52, 52);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .project-btn {
-    width: 100%;
+@media (max-width: 1024px) {
+  #header2 {
+    padding-left: 500px;
+  }
+
+  #P1, #P2 {
+    font-size: 100px;
+  }
+
+  #self {
+    width: 400px;
+    top: 80px;
   }
 
   #container5 h3,
   #container6 h3 {
-    font-size: 3rem;
+    padding-right: 0;
+  }
+
+  h3 {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #header1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  #header2 {
+    padding-left: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+    position: static;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  h3 {
+    margin-left: 0;
+    font-size: 1.8rem;
+  }
+
+  .container2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #P1, #P2 {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  #self {
+    width: 300px;
+    position: relative;
+    top: auto;
+    transform: none;
+    margin-top: 1rem;
+  }
+
+  #P3 {
+    font-size: 3.5rem;
   }
 
   .contact-info h2 {
     font-size: 2rem;
+  }
+
+  .contact-info p {
+    font-size: 1.1rem;
+  }
+
+  .project-btn {
+    width: 90%;
+  }
+
+  #container6 li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #P1, #P2 {
+    font-size: 50px;
+  }
+
+  #self {
+    width: 200px;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-links img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #P3 {
+    font-size: 2.5rem;
+  }
+
+  #container6 h3 {
+    font-size: 2.5rem;
+  }
+
+  #container5 h3 {
+    font-size: 2.5rem;
   }
 }
